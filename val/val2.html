@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <title>관광명소</title>
+    <link rel="stylesheet" href="start.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <section class="section" style="background-color: #ffffff;">
+        <div class="gallery-container">
+            <h1>
+                <div option-wrap>
+                    <label for="lang"></label>
+                    <i id="map-point" class='bx bxs-map' ></i><select name="languages" id="lang" onchange="redirectToSite()">
+                        <option value="select">한림면</option>
+                        <option value="1">진영읍</option>
+                        <option value="3">진례면</option>
+                        <option value="4">주촌면</option>
+                        <option value="5">생림면</option>
+                        <option value="6">상동면</option>
+                        <option value="7">대동면</option>
+                        <option value="8">@@동</option>
+                    </select>
+            </div>
+        </h1>
+            <p><i class='bx bx-info-circle' ></i> 한림면에 대한 설명</p>
+            <p>#기억의시간 #세월의흔적 #함께하는시간</p>
+            <div class="gallery">
+                <div class="image-wrapper">
+                    <img src="info1.png" alt="수로왕릉">
+                    <button class="overlay">버튼 1</button>
+                </div>
+                <div class="image-wrapper">
+                    <img src="info2.png" alt="이미지 2">
+                    <button class="overlay">버튼 2</button>
+                </div>
+                <div class="image-wrapper">
+                    <img src="info1.png" alt="이미지 3">
+                    <button class="overlay">버튼 3</button>
+                </div>
+                <div class="image-wrapper">
+                    <img src="info2.png" alt="이미지 4">
+                    <button class="overlay">버튼 4</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function redirectToSite() {
+            const selectedValue = document.getElementById("lang").value;
+
+            let url;
+            switch (selectedValue) {
+                case "1":
+                    url = "val1.html"; // 진영읍
+                    break;
+                case "2":
+                    url = "val2.html"; // 한림면
+                    break;
+                case "3":
+                    url = "val3.html"; // 진례면
+                    break;
+                case "4":
+                    url = "https://example.com/지역4"; // 주촌면
+                    break;
+                case "5":
+                    url = "https://example.com/지역5"; // 생림면
+                    break;
+                case "6":
+                    url = "https://example.com/지역6"; // 상동면
+                    break;
+                case "7":
+                    url = "https://example.com/지역7"; // 대동면
+                    break;
+                case "8":
+                    url = "https://example.com/지역8"; // @@동
+                    break;
+                case "select":
+                    return; // 아무 것도 선택하지 않은 경우
+                default:
+                    alert("지역을 선택하세요!");
+                    return;
+            }
+
+            window.location.href = url; // 선택된 URL로 이동
+        }
+    </script>

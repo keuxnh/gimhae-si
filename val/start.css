@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*:-webkit-scrollbar {
+    display: none;
+}
+
+select {
+    margin-bottom: 2px;
+    outline: 0;
+    background: rgb(231, 231, 231);
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    border: 0.02px solid;
+    padding: 4px;
+    border-radius: 9px;
+}
+.section {
+    background-image: url('back.jpeg');
+
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map-point{
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    color: rgb(214, 100, 100);
+}
+
+.gallery-container {
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    padding: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.gallery-container h1 { 
+    font-size: 30px;
+    color: black; 
+    text-align: center; 
+}
+.gallery-container p {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+}
+
+.image-wrapper {
+    position: relative; 
+    margin: 0 10px; /* 이미지 간격 */
+    overflow: hidden; 
+}
+
+.gallery img {
+    border-radius: 10px;
+    width: 200px; 
+    height: auto; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.5); 
+    filter: blur(5px); 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 18px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    pointer-events: auto; 
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}

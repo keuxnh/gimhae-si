@@ -1,0 +1,36 @@
+#sec1{
+    height: 100vh;
+}
+.option-wrap{
+    margin: 25px;
+    width: 350px;
+    height: 200px;
+    outline: dashed 1px black;
+    position: relative;
+}
+
+select {
+    margin-bottom: 2px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background: #919191;
+    color: #fff;
+    border: 0px;
+    padding: 4px;
+    border-radius: 9px;
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 45%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border-radius: 9px;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+}
