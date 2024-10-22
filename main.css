@@ -95,7 +95,7 @@ header {
 /*ui*/
 #background {
   height: 100vh;
-  background-image: url("back.jpeg");
+  background-image: url("image/back.jpeg");
   background-size: cover;
 }
 #fixed-button{
