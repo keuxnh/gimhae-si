@@ -63,6 +63,8 @@ header {
   color: #4ba5fa;
 }
 #Menu_Icon {
+  position: fixed;
+  margin-top: 30px;
   cursor: pointer;
   font-size: 30px;
 }
@@ -179,6 +181,7 @@ header {
   width: 15%;
   height: 30px;
 }
+
 #About:hover {
   color: rgb(3, 3, 3);
   background: #474747;
@@ -314,8 +317,31 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: rgb(110, 110, 110);
+  width: 0;
+  z-index: 1000;
+}
+
 /*스크린 사이즈*/
-@media screen and (max-width: 420px) {
+@media (max-width: 768px) {
+  select {
+    width: 40%;
+    height: 4%;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .text-section p {
+    font-size: 15px;
+  }
+
   .Main_Label {
     font-size: 36px;
   }
@@ -328,5 +354,9 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     font-size: 70%;
+  }
+  #fixed-button{
+    width: 13%;
+    font-size: 10px;
   }
 }

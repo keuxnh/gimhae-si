@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "OSeongandHanEum";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OSeongandHanEum.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#sec1 {
+  height: 100vh;
+}
+.option-wrap {
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+  position: relative;
+}
+
+select {
+  margin-bottom: 2px;
+  font-family: OSeongandHanEum;
+  outline: 0;
+  background: #808080;
+  color: #ffffff;
+  border: 0px;
+  padding: 4px;
+  border-radius: 9px;
+  position: absolute;
+  width: 15%;
+  top: 50%;
+  left: 50%;
+  height: 5%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
+}
+
+h1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: OSeongandHanEum;
+  color: #5f5f5f;
+}
+
+@media (max-width: 768px) {
+  select {
+    width: 40%;
+    height: 4%;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 130%;
+  }
+}
