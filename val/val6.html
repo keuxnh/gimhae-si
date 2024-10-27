@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <title>관광명소</title>
-    <link rel="stylesheet" href="start.css"> <!-- CSS 파일 링크 -->
-</head>
-<body>
-    <section class="section" style="background-color: #ffffff;">
-        <div class="gallery-container">
-            <h1>
-                <div option-wrap>
-                    <label for="lang"></label>
-                    <i id="map-point" class='bx bxs-map' ></i><select name="languages" id="lang" onchange="redirectToSite()">
-                        <option value="select">상동면</option>
-                        <option value="1">진영읍</option>
-                        <option value="2">한림면</option>
-                        <option value="3">진례면</option>
-                        <option value="4">주촌면</option>
-                        <option value="5">생림면</option>
-                        <option value="7">대동면</option>
-                        <option value="8">@@동</option>
-                    </select>
-            </div>
+    <link rel="stylesheet" href="start.css" />
+    <!-- CSS 파일 링크 -->
+  </head>
+  <body>
+    <section class="section" style="background-color: #ffffff">
+      <div class="gallery-container">
+        <h1>
+          <div option-wrap>
+            <label for="lang"></label>
+            <i id="map-point" class="bx bxs-map"></i
+            ><select name="languages" id="lang" onchange="redirectToSite()">
+              <option value="select">상동면</option>
+              <option value="1">진영읍</option>
+              <option value="2">한림면</option>
+              <option value="3">진례면</option>
+              <option value="4">주촌면</option>
+              <option value="5">생림면</option>
+              <option value="7">대동면</option>
+              <option value="8">@@동</option>
+            </select>
+          </div>
         </h1>
-            <p><i class='bx bx-info-circle' ></i> 경상남도 김해시 상동면</p>
-            <p>#신어산 #매화공원 # #장척계곡</p>
-            <div class="gallery">
-                <div class="image-wrapper">
-                    <img src="/image/val (1).jpeg" alt="수로왕릉">
-                    <button class="overlay"onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EC%82%B0/place/13491585?c=12.00,0,0,0,dh&placePath=%3Fentry%253Dbmp'">버튼 1</button>
-                </div>
-                <div class="image-wrapper">
-                    <img src="/image/val (2).jpeg" alt="이미지 2">
-                    <button class="overlay"onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EB%A7%A4%ED%99%94/place/1864901002?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp'">버튼 2</button>
-                </div>
-                <div class="image-wrapper">
-                    <img src="/image/val (3).jpeg" alt="이미지 3">
-                    <button class="overlay"onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EC%A0%80%EC%88%98%EC%A7%80?c=12.00,0,0,0,dh'">버튼 3</button>
-                </div>
-                <div class="image-wrapper">
-                    <img src="/image/val (4).jpeg" alt="이미지 4">
-                    <button class="overlay"onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EA%B3%84%EA%B3%A1/place/13496630?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp'">버튼 4</button>
-                </div>
-            </div>
+        <p><i class="bx bx-info-circle"></i> 경상남도 김해시 상동면</p>
+        <p>#신어산 #매화공원 # #장척계곡</p>
+        <div class="gallery">
+          <div class="image-wrapper">
+            <img src="/image/val (1).jpeg" alt="수로왕릉" />
+            <button
+              class="overlay"
+              onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EC%82%B0/place/13491585?c=12.00,0,0,0,dh&placePath=%3Fentry%253Dbmp'"
+            >
+              위치보기
+            </button>
+          </div>
+          <div class="image-wrapper">
+            <img src="/image/val (2).jpeg" alt="이미지 2" />
+            <button
+              class="overlay"
+              onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EB%A7%A4%ED%99%94/place/1864901002?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp'"
+            >
+              위치보기
+            </button>
+          </div>
+          <div class="image-wrapper">
+            <img src="/image/val (3).jpeg" alt="이미지 3" />
+            <button
+              class="overlay"
+              onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EC%A0%80%EC%88%98%EC%A7%80?c=12.00,0,0,0,dh'"
+            >
+              위치보기
+            </button>
+          </div>
+          <div class="image-wrapper">
+            <img src="/image/val (4).jpeg" alt="이미지 4" />
+            <button
+              class="overlay"
+              onClick="location.href='https://map.naver.com/p/search/%EC%83%81%EB%8F%99%EB%A9%B4%20%EA%B3%84%EA%B3%A1/place/13496630?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp'"
+            >
+              위치보기
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <script>
-        function redirectToSite() {
-            const selectedValue = document.getElementById("lang").value;
+      function redirectToSite() {
+        const selectedValue = document.getElementById("lang").value;
 
-            let url;
-            switch (selectedValue) {
-                case "1":
-                    url = "va1.html"; 
-                    break;
-                case "2":
-                    url = "val2.html"; 
-                    break;
-                case "3":
-                    url = "val3.html"; 
-                    break;
-                case "4":
-                    url = "val4.html"; 
-                    break;
-                case "5":
-                    url = "val5.html"; 
-                    break;
-                case "6":
-                    url = "val6.html"; 
-                    break;
-                case "7":
-                    url = "val7.html"; 
-                    break;
-                case "8":
-                    url = "val8.html"; 
-                    break;
-                case "select":
-                    return; 
-                default:
-                    alert("지역을 선택하세요!");
-                    return;
-            }
-
-            window.location.href = url; // 선택된 URL로 이동
+        let url;
+        switch (selectedValue) {
+          case "1":
+            url = "va1.html";
+            break;
+          case "2":
+            url = "val2.html";
+            break;
+          case "3":
+            url = "val3.html";
+            break;
+          case "4":
+            url = "val4.html";
+            break;
+          case "5":
+            url = "val5.html";
+            break;
+          case "6":
+            url = "val6.html";
+            break;
+          case "7":
+            url = "val7.html";
+            break;
+          case "8":
+            url = "val8.html";
+            break;
+          case "select":
+            return;
+          default:
+            alert("지역을 선택하세요!");
+            return;
         }
+
+        window.location.href = url; // 선택된 URL로 이동
+      }
     </script>
+  </body>
+</html>

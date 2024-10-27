@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="test.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="va0.css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>알아보고 싶은 지역을 선택하세요!</h1>
     <div option-wrap>
-        <form onsubmit="redirectToSite(event)">
-            <label for="lang"></label>
-            <select name="languages" id="lang">
-                <option value="select">지역을 선택하세요!</option>
-                <option value="1">진영읍</option>
-                <option value="2">한림면</option>
-                <option value="3">진례면</option>
-                <option value="4">주촌면</option>
-                <option value="5">생림면</option>
-                <option value="6">상동면</option>
-                <option value="7">대동면</option>
-                <option value="8">@@동</option>
-            </select>
-            <input type="submit" value="submit" />
-        </form>
+      <div option-wrap>
+        <label for="lang"></label>
+        <i id="map-point" class="bx bxs-map"></i
+        ><select
+          name="languages"
+          id="lang"
+          onchange="redirectToSite()"
+          class="selection-image"
+        >
+          <option value="select">진영읍</option>
+          <option value="2">한림면</option>
+          <option value="3">진례면</option>
+          <option value="4">주촌면</option>
+          <option value="5">생림면</option>
+          <option value="6">상동면</option>
+          <option value="7">대동면</option>
+          <option value="8">@@동</option>
+        </select>
+      </div>
     </div>
-</body>
-<script>
-    function redirectToSite(event) {
-        event.preventDefault(); // 기본 폼 제출 방지
-        const selectedValue = document.getElementById("lang").value;
+  </body>
+  <script>
+    function redirectToSite() {
+      const selectedValue = document.getElementById("lang").value;
 
-        // 선택된 값에 따라 이동할 URL 설정
-        let url;
-            switch (selectedValue) {
-                case "1":
-                    url = "va1.html"; 
-                    break;
-                case "2":
-                    url = "val2.html"; 
-                    break;
-                case "3":
-                    url = "val3.html"; 
-                    break;
-                case "4":
-                    url = "val4.html"; 
-                    break;
-                case "5":
-                    url = "val5.html"; 
-                    break;
-                case "6":
-                    url = "val6.html"; 
-                    break;
-                case "7":
-                    url = "val7.html"; 
-                    break;
-                case "8":
-                    url = "val8.html"; 
-                    break;
-                case "select":
-                    return; 
-                default:
-                    alert("지역을 선택하세요!");
-                    return;
-            }
+      let url;
+      switch (selectedValue) {
+        case "1":
+          url = "va1.html";
+          break;
+        case "2":
+          url = "val2.html";
+          break;
+        case "3":
+          url = "val3.html";
+          break;
+        case "4":
+          url = "val4.html";
+          break;
+        case "5":
+          url = "val5.html";
+          break;
+        case "6":
+          url = "val6.html";
+          break;
+        case "7":
+          url = "val7.html";
+          break;
+        case "8":
+          url = "val8.html";
+          break;
+        case "select":
+          return;
+        default:
+          alert("지역을 선택하세요!");
+          return;
+      }
 
-        window.location.href = url; // 선택된 URL로 이동
+      window.location.href = url;
     }
-</script>
+  </script>
 </html>

@@ -1,145 +1,170 @@
 @font-face {
-    font-family: "OSeongandHanEum";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OSeongandHanEum.woff")
+  font-family: "OSeongandHanEum";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OSeongandHanEum.woff")
     format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 body {
-    margin: 0;
-    overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 *:-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 select {
-    margin-bottom: 2px;
-    outline: 0;
-    background: rgb(231, 231, 231);
-    color: rgb(66, 66, 66);
-    font-size: 20px;
-    border: 0.02px solid;
-    padding: 4px;
-    border-radius: 9px;
+  margin-bottom: 2px;
+  outline: 0;
+  background: rgb(231, 231, 231);
+  color: rgb(66, 66, 66);
+  font-size: 20px;
+  border: 0.02px solid;
+  padding: 4px;
+  border-radius: 9px;
 }
-p{
-    font-family: OSeongandHanEum;
+p {
+  font-family: OSeongandHanEum;
 }
 .section {
-    background-image: url('back.jpeg');
+  background-image: url("back.jpeg");
 
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#map-point{
-    position: relative;
-    top: 5px;
-    margin-right: 10px;
-    color: rgb(214, 100, 100);
+#map-point {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+  color: rgb(214, 100, 100);
 }
 
 .gallery-container {
-    border-radius: 10px;
-    background-color: rgb(231, 231, 231);
-    padding: 50px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+  border-radius: 10px;
+  background-color: rgb(231, 231, 231);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.gallery-container h1 { 
-    font-size: 30px;
-    color: black; 
-    text-align: center; 
+.gallery-container h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
 }
 .gallery-container p {
-    margin-top: -10px;
-    margin-bottom: 30px;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .gallery {
-    display: flex;
+  display: flex;
 }
 
 .image-wrapper {
-    position: relative; 
-    margin: 0 10px; /* 이미지 간격 */
-    overflow: hidden; 
+  position: relative;
+  margin: 0 10px; /* 이미지 간격 */
+  overflow: hidden;
 }
 
 .gallery img {
-    border-radius: 10px;
-    width: 200px; 
-    height: auto; 
-    transition: transform 0.3s ease, filter 0.3s ease; 
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .image-wrapper:hover img {
-    transform: scale(1.5); 
-    filter: blur(5px); 
+  transform: scale(1.5);
+  filter: blur(5px);
 }
 
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color: white; 
-    font-size: 18px; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    border: none; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-    pointer-events: auto; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
 }
 
 .image-wrapper:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
-#bg1{
-    background-image: url('/image/');
-    background-size: cover;
+#bg1 {
+  background-image: url("/image/");
+  background-size: cover;
 }
-#bg2{
-    background-image: url('/image/');
-    background-size: cover;
+#bg2 {
+  background-image: url("/image/");
+  background-size: cover;
 }
-#bg3{
-    background-image: url('/image/');
-    background-size: cover;
-}
-
-#bg4{
-    background-image: url('/image/');
-    background-size: cover;
+#bg3 {
+  background-image: url("/image/");
+  background-size: cover;
 }
 
-#bg5{
-    background-image: url('/image/');
-    background-size: cover;
+#bg4 {
+  background-image: url("/image/");
+  background-size: cover;
 }
 
-#bg6{
-    background-image: url('/image/');
-    background-size: cover;
+#bg5 {
+  background-image: url("/image/");
+  background-size: cover;
 }
 
-#bg7{
-    background-image: url('/image/');
-    background-size: cover;
-}
-#bg8{
-    background-image: url('/image/');
-    background-size: cover;
+#bg6 {
+  background-image: url("/image/");
+  background-size: cover;
 }
 
+#bg7 {
+  background-image: url("/image/");
+  background-size: cover;
+}
+#bg8 {
+  background-image: url("/image/");
+  background-size: cover;
+}
 
+@media (max-width: 768px) {
+  .image-wrapper {
+    margin: 0 2px; /* 이미지 간격 */
+  }
+
+  .image-wrapper img {
+    width: 105%;
+  }
+
+  .gallery-container {
+    width: calc(100% - 60px); /* 모바일에서는 한 열로 표시 */
+    padding: 20px; /* 모바일에서 패딩 감소 */
+    size: 30%;
+  }
+
+  .gallery-container p {
+    font-size: 14px; /* 제목 크기 조정 */
+  }
+  .overlay {
+    width: 5%;
+    font-size: 5%;
+  }
+
+  select {
+    font-size: 17px; /* 드롭다운 크기 조정 */
+  }
+}
