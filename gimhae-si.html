@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <link href="main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<header>
+    <button id="fixed-button" onClick="location.href='val/val0.html'">찾아보기</button>
+</header>
+
+<body>
+    <div id="progress-bar"></div>
+    <section id="sec1">
+        <div id="background">
+            <div id="blur">
+                <div id="Nav_Bar">
+                    <i id="Menu_Icon" class="bx bx-menu" onClick="toggleSidebar()"></i>
+                </div>
+                <div id="Sec_Center">
+                    <p class="Main_Label">Gimhae-Si</p>
+                    <p class="Support_Label">Travel spots for Gimahae-si</p>
+                    <button id="About" onClick="location.href='#sec3'">About</button>
+                    <p id="stnw" onClick="location.href='val/val0.html'">Tourist spots</p>
+                    <div id="Sec_Bottom">
+                        <div><p class="Bottom_Label">더알아보기</p></div>
+                        <div>
+                            <p id="Bottom_Image">
+                                <i id="Down_Icon" class="bx bx-chevron-down"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="SideButtons" class="hidden">
+                    <i id="Close_Icon" class="bx bx-x" onClick="toggleSidebar()"></i>
+                    <p id="side-text">추가정보</p>
+                    <hr class="side-line" />
+                    <button id="Support" onclick="location.href='side/support.html'">지원</button>
+                    <button id="Explain" onclick="location.href='side/infomations.html'">정보</button>
+                    <button id="Donwload" onclick="location.href='side/download.html'">다운로드</button>
+                    <button id="Github" onclick="location.href='//github.com/keuxnh'">깃허브</button>
+                    <hr class="side-line" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="Section_Line">test</div>
+    <section id="sec2">
+        <div class="container">
+            <div class="text-section">
+                <h2>#지역을선택하세요</h2>
+                <p>선택한 지역의 관광지를 한눈에 볼 수 있어요!</p>
+            </div>
+            <div class="image-section">
+                <img src="image/infomations (1).png" alt="김해시 이미지" />
+            </div>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="container">
+            <div class="image-section">
+                <img src="image/infomations (2).png" alt="김해시 이미지" />
+            </div>
+            <div class="text-section">
+                <h2>#이미지를클릭</h2>
+                <p>이미지를 클릭하면 사진의 위치를 나타냅니다!</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p class="normal-foot">작성자 이메일 : keuxnh0@gmail.com</p>
+            <p class="normal-foot">
+                김해시청 민원콜센터 : 1577-9400(유료), 055-330-3114(유료)
+            </p>
+            <p class="gredi-foot">
+                ※ 민원콜센터 운영시간 : 평일 09:00~18:00, 공휴일 및 근무시간 이후는
+                당직실로 연결.
+            </p>
+            <p class="normal-foot">&copy; 2024 2학기 자율교육과정 프로젝트</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // 프로그레스 바
+    window.onscroll = function() {
+        let scrollTop = document.documentElement.scrollTop;
+        let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollPercentage = (scrollTop / scrollHeight) * 100;
+        document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+    };
+    // 투명도변화
+    let observer = new IntersectionObserver((e) => {
+        e.forEach((suro) => {
+            if (suro.isIntersecting) {
+                suro.target.style.opacity = 1;
+            } else suro.target.style.opacity = 0;
+        });
+    });
+    let div = document.getElementsByClassName("container");
+    observer.observe(div[0]);
+    observer.observe(div[1]);
+
+    function toggleSidebar() {
+        const sidebar = document.getElementById("SideButtons");
+        sidebar.classList.toggle("show");
+    }
+</script>
+</html>
